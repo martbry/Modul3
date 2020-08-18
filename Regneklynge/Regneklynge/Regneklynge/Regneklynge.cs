@@ -41,10 +41,32 @@ namespace Regneklynge
 
             Rackliste.Add(NewRack(10));
             InsertNode(antallcpuer, antallgbminne);
-
         }
 
+        public int CpuCount()
+        {
+            int cpucounter = 0;
 
+            foreach (var rack in Rackliste)
+            {
+
+                foreach (var node in rack.Noderack)
+                {
+                    cpucounter += node.Antallcpuer;
+                }
+
+                //for (int i = 0; i < rack.Noderack.Length; i++)
+                //{
+                //    if (rack.Noderack[i] != null)
+                //    {
+                //        cpucounter += rack.Noderack[i].Antallcpuer;
+                //    }
+                    
+                //}
+            }
+
+            return cpucounter;
+        }
     }
 
 }

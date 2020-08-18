@@ -14,6 +14,7 @@ namespace Regneklynge
             }
 
             Console.WriteLine(regneklynge1.RackCount());
+            Console.WriteLine(regneklynge1.CpuCount());
         }
     }
 }
