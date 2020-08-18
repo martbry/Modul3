@@ -30,7 +30,7 @@ namespace Regneklynge
                 return;
             }
 
-            foreach (var rack in Rackliste)
+            foreach (Rack rack in Rackliste)
             {
                 if (!rack.IsFull())
                 {
@@ -49,24 +49,34 @@ namespace Regneklynge
 
             foreach (var rack in Rackliste)
             {
-
                 foreach (var node in rack.Noderack)
                 {
-                    cpucounter += node.Antallcpuer;
+                    if (node != null)
+                    {
+                        cpucounter += node.Antallcpuer;
+                    }
                 }
-
-                //for (int i = 0; i < rack.Noderack.Length; i++)
-                //{
-                //    if (rack.Noderack[i] != null)
-                //    {
-                //        cpucounter += rack.Noderack[i].Antallcpuer;
-                //    }
-                    
-                //}
             }
 
             return cpucounter;
         }
-    }
 
+        public int NodeWithEnoughMemory(int requiredgb)
+        {
+            int nodecounter = 0;
+
+            foreach (var rack in Rackliste)
+            {
+                foreach (var node in rack.Noderack)
+                {
+                    if ((node != null) && (node.Antallgbminne >= requiredgb))
+                    {
+                        nodecounter++;
+                    }
+                }
+            }
+
+            return nodecounter;
+        }
+    }
 }
