@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomBoxes", "RandomBoxes\RandomBoxes.csproj", "{2B095645-F6E0-4861-B61D-E5BA5A3977C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomBoxesUnitTesting", "RandomBoxesUnitTesting\RandomBoxesUnitTesting.csproj", "{C9E535BE-DC37-471E-9308-3F4BB0F213A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B095645-F6E0-4861-B61D-E5BA5A3977C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B095645-F6E0-4861-B61D-E5BA5A3977C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B095645-F6E0-4861-B61D-E5BA5A3977C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B095645-F6E0-4861-B61D-E5BA5A3977C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9E535BE-DC37-471E-9308-3F4BB0F213A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9E535BE-DC37-471E-9308-3F4BB0F213A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9E535BE-DC37-471E-9308-3F4BB0F213A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9E535BE-DC37-471E-9308-3F4BB0F213A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {77352C5F-CBB6-412C-A194-E7E1279CD023}
+	EndGlobalSection
+EndGlobal
